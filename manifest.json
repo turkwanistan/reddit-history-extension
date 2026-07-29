@@ -3,6 +3,14 @@
   "name": "Reddit Comment History",
   "version": "0.1.0",
   "description": "Restores comment/post history on Reddit profile pages using the Arctic Shift archive API.",
+  "permissions": ["storage"],
+  "host_permissions": ["https://arctic-shift.photon-reddit.com/*"],
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
   "content_scripts": [
     {
       "matches": ["*://www.reddit.com/user/*", "*://www.reddit.com/u/*"],
